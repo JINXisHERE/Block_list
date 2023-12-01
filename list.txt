@@ -1,3 +1,4 @@
 # Custom host records are listed here.
 
 ||appmetrica.yandex.ru^
+0.0.0.0 appmetrica.yandex.ru
