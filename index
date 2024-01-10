@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <style>
+       body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
-    .main-container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 20px;
-    }
+  .filter {
+    width: 20%;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
 
-    .filter {
-      width: 20%;
-      padding: 10px;
-      background-color: #f0f0f0;
-    }
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    flex: 0 0 calc(33.33% - 20px); /* Max three items in a row with 20px gap */
+  }
 
-    .items-container {
-      width: 80%;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+  .items-container {
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Center items horizontally */
+    gap: 20px;
+  }
 
-    .item {
-      flex: 0 0 calc(33.33% - 20px); /* Max three items in a row with 20px gap */
-      background-color: #e0e0e0;
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-  </style>
-</head>
-<body>
-  <div class="main-container">
-    <div class="filter">
-      <!-- Your filter content goes here -->
-      Filter
-    </div>
-    <div class="items-container">
-      <!-- Your items go here (repeat the item div as needed) -->
-      <div class="item">Item 1</div>
-      <div class="item">Item 2</div>
-      <div class="item">Item 3</div>
-      <!-- Repeat as needed -->
-    </div>
-  </div>
-</body>
+  .item {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 20px;
+  } 
+    </style>
+    <body>
+        <div class="main">
+            <div class="filter">
+                <!-- Your filter content goes here -->
+                Filter
+                <hr>
+            </div>
+            <div class="main-container">
+
+                <div class="items-container">
+                    <!-- Your items go here (repeat the item div as needed) -->
+                    <div class="item">Item 1</div>
+                    <div class="item">Item 2</div>
+                    <div class="item">Item 3</div>
+                    <div class="item">Item 3</div>
+                    <div class="item">Item 3</div>
+                    <div class="item">Item 3</div>
+
+                    <!-- Repeat as needed -->
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
