@@ -31,7 +31,6 @@
             width: 80%;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between; /* Adjusted to space between items */
             gap: 20px;
         }
 
